@@ -64,7 +64,7 @@ function gacp() {
     fi # closing statement of if-else block
     git push origin HEAD
 }
-alias lat='pvenv && python ~/.local/bin/latexocr && deactivate'
+alias lat='pvenv && latexocr && deactivate'
 # Python virtualenv
 function pvenv() {
     venv_path=~/.config/venv
