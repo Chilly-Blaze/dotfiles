@@ -1,5 +1,3 @@
-require 'indent_blankline'.setup {
-    space_char_blankline = " ",
-    show_current_context = true,
-    filetype_exclude = { "lspinfo", "packer", "checkhealth", "help", "man", "dashboard" },
+require 'ibl'.setup {
+    exclude = { filetypes = { "lspinfo", "packer", "checkhealth", "help", "man", "dashboard" } }
 }

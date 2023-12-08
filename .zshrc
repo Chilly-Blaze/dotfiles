@@ -112,3 +112,4 @@ path+=('/home/tsundere/Documents/Non-pacman/bin')
 export PNPM_HOME="/home/tsundere/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi

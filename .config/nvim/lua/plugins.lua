@@ -10,7 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 vim.opt.rtp:prepend(lazypath)
-return require('lazy').setup({
+return require 'lazy'.setup {
     -- 主题
     "olimorris/onedarkpro.nvim",
     -- 语法高亮，折叠
@@ -52,7 +52,6 @@ return require('lazy').setup({
     -- 文件查找
     {
         'nvim-telescope/telescope.nvim',
-        version = '0.1.1',
         dependencies = {
             'nvim-lua/plenary.nvim' }
     },
@@ -70,11 +69,11 @@ return require('lazy').setup({
     { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
     'arkav/lualine-lsp-progress',
     -- 代码执行
-    { 'CRAG666/code_runner.nvim',        dependencies = 'nvim-lua/plenary.nvim' },
+    { 'CRAG666/code_runner.nvim',            dependencies = 'nvim-lua/plenary.nvim' },
     -- 前置缩进增强
-    "lukas-reineke/indent-blankline.nvim",
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl",                          opts = {} },
     -- 代码格式化
-    { "jose-elias-alvarez/null-ls.nvim", dependencies = "nvim-lua/plenary.nvim" },
+    { "jose-elias-alvarez/null-ls.nvim",     dependencies = "nvim-lua/plenary.nvim" },
     -- 翻译
     { "potamides/pantran.nvim" }
-})
+}

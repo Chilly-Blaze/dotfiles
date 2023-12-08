@@ -44,7 +44,7 @@ m('n', 'q', function()
     elseif n == 1 then
         return '<Cmd>bd<CR><Cmd>Dashboard<CR>'
     else
-        return '<Cmd>bp|bd #<CR>'
+        return '<Cmd>bd<CR>'
     end
 end, { expr = true })
 
