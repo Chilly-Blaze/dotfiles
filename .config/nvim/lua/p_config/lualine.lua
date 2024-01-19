@@ -1,39 +1,36 @@
-require 'lualine'.setup({
+require 'lualine'.setup {
     options = {
-        -- 指定皮肤
-        -- theme = "tokyonight",
-        -- 分割线
-        component_separators = {
-            left = "",
-            right = "",
-        },
-        -- https://github.com/ryanoasis/powerline-extra-symbols
+        component_separators = '',
         section_separators = {
-            left = " ",
-            right = "",
+            left = ' ',
+            right = ' ',
         },
         globalstatus = true,
     },
     sections = {
-        lualine_c = {
-            "filename",
+        lualine_b = {
+            { 'b:gitsigns_status', icons_enabled = true, icon = '', separator = '\\' },
+            { 'filetype', icon_only = true },
             {
-                "lsp_progress",
-                spinner_symbols = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
-            },
-        },
-        lualine_x = {
-            "filesize",
-            {
-                "fileformat",
+                'filename',
+                newfile_status = true,
                 symbols = {
-                    unix = ' ', -- e712
-                    dos = ' ', -- e70f
-                    mac = ' ', -- e711
+                    modified = '󰷈',
+                    readonly = '󱪟',
+                    unnamed = '󱪗',
+                    newfile = '󱪝',
                 },
             },
-            "encoding",
-            "filetype",
+        },
+        lualine_c = { 'lsp_progress' },
+        lualine_x = {},
+        lualine_y = {
+            'diagnostics',
+            { 'encoding', icons_enabled = true, icon = '' },
+        },
+        lualine_z = {
+            { 'progress', icons_enabled = true, icon = '󰦨 ' },
+            'location',
         },
     },
-})
+}

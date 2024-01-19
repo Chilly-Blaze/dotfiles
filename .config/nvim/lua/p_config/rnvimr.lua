@@ -6,6 +6,6 @@ vim.g.rnvimr_enable_picker = 1
 vim.g.rnvimr_enable_bw = 1
 vim.g.rnvimr_action = {
     -- 新打开文件sv和sh进行横向和纵向分屏
-    sv = 'NvimEdit vsplit',
-    sh = 'NvimEdit split',
+    tv = 'NvimEdit vsplit',
+    ts = 'NvimEdit split',
 }

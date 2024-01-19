@@ -7,3 +7,5 @@ email = l135163642@gmail.com
 	defaultBranch = master
 [pull]
 	rebase = true
+[core]
+	autocrlf = input
