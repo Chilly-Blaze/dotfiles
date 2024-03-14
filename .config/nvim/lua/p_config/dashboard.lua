@@ -13,9 +13,9 @@ require 'dashboard'.setup({
             [[]],
         },
         shortcut = {
-            { desc = ' Update', group = '@property', action = 'Lazy update', key = 'u' },
+            { desc = '󰚰 Update', group = '@property', action = 'Lazy update', key = 'u' },
             {
-                desc = ' Files',
+                desc = ' Files',
                 action = 'Telescope find_files',
                 group = '@operator',
                 key = 'f',
@@ -30,12 +30,12 @@ require 'dashboard'.setup({
                 desc = ' Mapping',
                 action = 'edit ~/.config/nvim/lua/maps.lua',
                 group = '@character',
-                key = 'm'
+                key = 'm',
             },
         },
         footer = {
             '',
             '夏の花の如く艶やかに生き、秋の枯葉の如く穏やかに终りを迎えよ',
         },
-    }
+    },
 })

@@ -76,4 +76,6 @@ return require 'lazy'.setup {
     'potamides/pantran.nvim',
     -- Git信息显示
     'lewis6991/gitsigns.nvim',
+    -- Codeium
+    { 'Exafunction/codeium.vim', event = 'BufEnter' },
 }
