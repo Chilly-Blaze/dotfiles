@@ -77,5 +77,6 @@ return require 'lazy'.setup {
     -- Git信息显示
     'lewis6991/gitsigns.nvim',
     -- Codeium
+    -- :Codeium Auth
     { 'Exafunction/codeium.vim', event = 'BufEnter' },
 }

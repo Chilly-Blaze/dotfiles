@@ -7,20 +7,19 @@ cmp.setup {
     -- 指定 snippet 引擎
     snippet = { expand = function(args) require('luasnip').lsp_expand(args.body) end },
     -- 常规代码来源
-    sources = cmp.config.sources({
+    sources = {
         { name = 'nvim_lsp' },
         { name = 'nvim_lsp_signature_help' },
         { name = 'luasnip' },
-    }, {
         { name = 'buffer' },
         { name = 'path' },
-    }),
+    },
     -- 快捷键
     mapping = cmp.mapping.preset.insert {
         ['<Tab>'] = cmp.mapping.confirm({ select = true }),
-        ['<Down>'] = cmp.mapping.select_next_item(),
-        ['<S-Tab>'] = cmp.mapping.select_next_item(),
-        ['<Up>'] = cmp.mapping.select_prev_item(),
+        ['<S-Tab>'] = cmp.mapping.abort(),
+        ['<C-n>'] = cmp.mapping.select_next_item(),
+        ['<C-p>'] = cmp.mapping.select_prev_item(),
     },
     -- 使用lspkind-nvim显示类型图标
     formatting = {

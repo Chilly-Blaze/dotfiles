@@ -30,7 +30,7 @@ require 'lualine'.setup {
         },
         lualine_z = {
             { 'progress', icons_enabled = true, icon = '󰦨 ' },
-            'location',
+            { 'codeium#GetStatusString', icons_enabled = true, icon = '' },
         },
     },
 }

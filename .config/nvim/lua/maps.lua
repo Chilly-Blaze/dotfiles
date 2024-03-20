@@ -133,3 +133,8 @@ m('n', 'gs', '<Cmd>Gitsigns toggle_deleted<CR><Cmd>Gitsigns toggle_linehl<CR><Cm
 m('n', 'gn', '<Cmd>Gitsigns next_hunk<CR>')
 m('n', 'gp', '<Cmd>Gitsigns prev_hunk<CR>')
 m('n', 'gt', '<Cmd>Gitsigns diffthis<CR>')
+-- Codeium
+vim.g.codeium_disable_bindings = 1
+m('i', '<Tab>', function() return vim.fn['codeium#Accept']() end, { expr = true })
+m('i', '<C-p>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true })
+m('i', '<C-n>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true })
