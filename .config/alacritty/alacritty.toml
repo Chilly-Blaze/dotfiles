@@ -1,0 +1,47 @@
+[window]
+title = "Nya~"
+dynamic_padding = true
+padding = { x = 50, y = 50 }
+opacity = 0.97
+blur = true
+[scrolling]
+history = 100000
+[font]
+normal = { family = "Comic Mono", style = "Normal" }
+bold = { family = "Comic Mono", style = "Bold" }
+size = 15
+[colors]
+[colors.primary]
+foreground = "#888188"
+background = "#fffefe"
+[colors.normal]
+black = "#827C82"
+red = "#DF2935"
+green = "#7ECC66"
+yellow = "#FFB133"
+blue = "#33C2FF"
+magenta = "#FA75C0"
+cyan = "#C590DF"
+white = "#BDB9B2"
+[colors.bright]
+black = "#A19B91"
+red = "#E75F68"
+green = "#98D685"
+yellow = "#FFC870"
+blue = "#99E0FF"
+magenta = "#FB9DD2"
+cyan = "#CDA0E3"
+white = "#D0CDC8"
+[selection]
+save_to_clipboard = true
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
+unfocused_hollow = false
+thickness = 0.2
+[mouse]
+hide_when_typing = true
+[keyboard]
+bindings = [
+{ key = "v", mods = "Control", action = "ToggleViMode" },
+]
